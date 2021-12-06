@@ -1,0 +1,1 @@
+docker-compose run app ng new ng-docker --directory . --skipInstall  
