@@ -1,0 +1,9 @@
+#!/bin/bash
+containerName="addContainerName"
+if [ $1 == "serve"]
+then
+docker-compose run --service-ports --rm $containerName
+else
+containerID=$(docker ps -aqf "name=$ContainerName")
+docker exec -it $containerID ng "$@"
+fi
